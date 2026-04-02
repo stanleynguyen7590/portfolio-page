@@ -3,9 +3,14 @@ async function fetchMD(name) {
     return res.text();
 }
 
+function normalize(text) {
+    return text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+}
+
 function parseFrontmatter(text) {
+    const src = normalize(text);
     const meta = {};
-    const match = text.match(/^---\n([\s\S]*?)\n---/);
+    const match = src.match(/^---\n([\s\S]*?)\n---/);
     if (match) {
         match[1].split('\n').forEach(line => {
             const idx = line.indexOf(':');
@@ -16,12 +21,12 @@ function parseFrontmatter(text) {
             }
         });
     }
-    const body = text.replace(/^---\n[\s\S]*?\n---\n?/, '').trim();
+    const body = src.replace(/^---\n[\s\S]*?\n---\n?/, '').trim();
     return { meta, body };
 }
 
 function splitItems(text) {
-    return text.split(/\n---\n/).map(s => s.trim()).filter(Boolean);
+    return normalize(text).split(/\n---\n/).map(s => s.trim()).filter(Boolean);
 }
 
 function mdToHtml(md) {
