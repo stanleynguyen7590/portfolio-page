@@ -8,6 +8,7 @@ tags: Deep Learning, Traffic Optimization
 
 Deep learning-based traffic flow prediction using spatio-temporal graph neural networks
 
+===
 ---
 name: Tran Thi B
 initials: TB
@@ -18,6 +19,7 @@ tags: FPGA, Edge AI
 
 FPGA-accelerated inference engines for edge AI applications in autonomous systems
 
+===
 ---
 name: Le Hoang C
 initials: LC
@@ -28,6 +30,7 @@ tags: Computer Vision, Infrastructure
 
 Computer vision techniques for railway infrastructure inspection and monitoring
 
+===
 ---
 name: Pham Minh D
 initials: PD
@@ -38,6 +41,7 @@ tags: Hardware Design, CNN
 
 Energy-efficient hardware architectures for convolutional neural networks
 
+===
 ---
 name: Vo Thanh E
 initials: VE
@@ -48,6 +52,7 @@ tags: IoT, Smart City
 
 IoT-based smart transportation management system for urban areas
 
+===
 ---
 name: Do Anh F
 initials: DF

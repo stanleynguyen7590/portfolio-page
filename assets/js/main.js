@@ -26,7 +26,7 @@ function parseFrontmatter(text) {
 }
 
 function splitItems(text) {
-    return normalize(text).split(/\n---\n/).map(s => s.trim()).filter(Boolean);
+    return normalize(text).split(/\n===\n/).map(s => s.trim()).filter(Boolean);
 }
 
 function mdToHtml(md) {

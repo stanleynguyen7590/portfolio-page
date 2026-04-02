@@ -9,6 +9,7 @@ links: Google Scholar|#, Email|mailto:duyanh@utc.edu.vn
 
 Dr. Duy-Anh Nguyen is a researcher and lecturer at UTC, specializing in intelligent transportation systems, computer vision, and applied machine learning. He leads collaborative research projects with international partners and supervises graduate students in cutting-edge computing research.
 
+===
 ---
 name: Prof. Khanh-Nghi Dang
 initials: KN
